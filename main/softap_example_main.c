@@ -58,7 +58,7 @@
 static const char *TAG = "GOTLALEM";
 
 
-/*
+
 //oled ekran pin tanımlamaları
 #define oled_sda 7
 #define oled_scl 6
@@ -101,7 +101,7 @@ uint8_t doga_pogaca_bitmap[] = {
 0xff, 0xff, 0xff, 0x07, 0xff, 0xe7, 0xfd, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xf3, 0xfc, 0xff, 
 0xff, 0xff, 0xff, 0xff, 0xff, 0xf8, 0x7e, 0x7f, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0x1f, 0x7f
 };
-*/
+
 
 //html dosyalarının gömülmesi
 extern const uint8_t index_html_start[] asm("_binary_index_html_start");
@@ -250,7 +250,7 @@ static void connect_handler(void* arg, esp_event_base_t event_base,
         *server = start_webserver();
     }
 }
-/*
+
 //ekran isimlendirmesi
 SSD1306_t ekran;
 //oledin kurulumu ve temel ayarları
@@ -282,7 +282,7 @@ void oled_baslangic(){
     }
 
 }
-*/
+
 void app_main(void)
 {
     //server isinmendirmesi   
@@ -300,10 +300,10 @@ void app_main(void)
     ESP_ERROR_CHECK(esp_netif_init());
     ESP_ERROR_CHECK(esp_event_handler_register(IP_EVENT, IP_EVENT_AP_STAIPASSIGNED, &connect_handler, &server));
     
-    /* hafiflik için oled ekranı söktüm
+ 
     //oled kurulumunun çalıştırılması
     oled_kurulumu();
     //cihaz açıldığında oled ekranda gösterilecek için task
     xTaskCreate(oled_baslangic, "oled_baslangic", 4096, NULL, 10, &oled_baslangic_isleyici);
-    */
+
 }
