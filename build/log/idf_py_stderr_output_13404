@@ -1,0 +1,6 @@
+Command list: dfu-util;-d;303a:2;-D;C:/Users/berke/Desktop/hello_world/build/dfu.bin
+Lost device after RESET?
+CMake Error at C:/Espressif/frameworks/esp-idf-v5.0/tools/cmake/run_dfu_util.cmake:27 (message):
+  dfu-util failed
+
+

@@ -1,0 +1,11 @@
+[0/1] cmd.exe /C "cd /D C:\Users\berke\Desktop\hello_world\build && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D ESP_DFU_BIN="C:/Users/berke/Desktop/hello_world/build/dfu.bin" -D ESP_DFU_PID="2" -P C:/Espressif/frameworks/esp-idf-v5.0/tools/cmake/run_dfu_util.cmake"
+dfu-util 0.9
+
+Copyright 2005-2009 Weston Schmidt, Harald Welte and OpenMoko Inc.
+Copyright 2010-2016 Tormod Volden and Stefan Schmidt
+This program is Free Software and has ABSOLUTELY NO WARRANTY
+Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
+
+FAILED: CMakeFiles/dfu-flash C:/Users/berke/Desktop/hello_world/build/CMakeFiles/dfu-flash 
+cmd.exe /C "cd /D C:\Users\berke\Desktop\hello_world\build && C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D ESP_DFU_BIN="C:/Users/berke/Desktop/hello_world/build/dfu.bin" -D ESP_DFU_PID="2" -P C:/Espressif/frameworks/esp-idf-v5.0/tools/cmake/run_dfu_util.cmake"
+ninja: build stopped: subcommand failed.
