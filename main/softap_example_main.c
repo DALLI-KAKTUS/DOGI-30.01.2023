@@ -877,8 +877,8 @@ void app_main(void)
     
  
     //oled kurulumunun çalıştırılması
-    oled_kurulumu();
+    //oled_kurulumu();
     //cihaz açıldığında oled ekranda gösterilecek için task
-    xTaskCreate(oled_baslangic, "oled_baslangic", 4096, NULL, 10, &oled_baslangic_isleyici);
+    //xTaskCreate(oled_baslangic, "oled_baslangic", 4096, NULL, 10, &oled_baslangic_isleyici);
 
 }
