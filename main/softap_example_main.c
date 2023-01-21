@@ -47,7 +47,7 @@
 #include "ssd1306.h"
 #include "font8x8_basic.h"
 //WIFI tanımlamaları
-#define WIFI_SSID      "DOGA"
+#define WIFI_SSID      "berke"
 #define WIFI_PASS      "30052022"
 #define WIFI_CHANNEL    1
 #define MAX_STA_CONN    2
