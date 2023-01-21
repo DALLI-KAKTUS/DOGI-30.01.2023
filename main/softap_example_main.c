@@ -643,6 +643,9 @@ uint8_t doga_pogaca_bitmap[] = {
 extern const uint8_t index_html_start[] asm("_binary_index_html_start");
 extern const uint8_t index_html_end[] asm("_binary_index_html_end");
 
+extern const uint8_t kedy_html_start[] asm("_binary_kedy_html_start");
+extern const uint8_t kedy_html_end[] asm("_binary_kedy_html_end");
+
 //WIFI kurulumu
 
 //wifi işleyicisi
@@ -656,7 +659,7 @@ static void wifi_event_handler(void* arg, esp_event_base_t event_base,
 		//wifiye bağlanınca ekrana adresi yazdır
 		ssd1306_clear_screen(&ekran, false);
 		ssd1306_display_text(&ekran, 0, "192.168.4.1", 11, false);
-		ssd1306_display_text(&ekran, 3, "NAPCANI BILION", 14, false);
+		ssd1306_display_text(&ekran, 3, "buraya gri", 14, false);
     } else if (event_id == WIFI_EVENT_AP_STADISCONNECTED) {
         wifi_event_ap_stadisconnected_t* event = (wifi_event_ap_stadisconnected_t*) event_data;
         ESP_LOGI(TAG, "station "MACSTR" leave, AID=%d",
@@ -720,7 +723,22 @@ return error;
 
 }
 
+//kedy için GET işleyicisi
+static esp_err_t kedy_get_isleyici(httpd_req_t *req)
+{
+	esp_err_t error;
+	ESP_LOGI (TAG, "kedy cagrildi");
+	error = httpd_resp_send(req, (const char *) kedy_html_start, kedy_html_end - kedy_html_start);;
+// kedye basılınca olede bişiler ypa
+	
+	if (error != ESP_OK)
+	{
+	ESP_LOGI (TAG, "Error %d while sending Response", error);
+	}
+else ESP_LOGI (TAG, "Response sent Successfully");
+return error;	
 
+}
 
 //uri yapıları
 
@@ -734,7 +752,15 @@ static const httpd_uri_t index_uri = {
     .user_ctx  = NULL
 };
 
-
+//kedy URI yapısı
+static const httpd_uri_t kedy_uri = {
+    .uri       = "/kedy",
+    .method    = HTTP_GET,
+    .handler   = kedy_get_isleyici,
+    /* Let's pass response string in user
+     * context to demonstrate it's usage */
+    .user_ctx  = NULL
+};
 
 
 //404 hatası işleyicisi
@@ -759,6 +785,7 @@ static httpd_handle_t start_webserver(void)
         //URI işleyicileri, iki alt satırdaki kodu her URI yapısı için yaz
         ESP_LOGI(TAG, "Registering URI handlers");
         httpd_register_uri_handler(server, &index_uri);
+        httpd_register_uri_handler(server, &kedy_uri);
         return server;
     }
     ESP_LOGI(TAG, "Error starting server!");
