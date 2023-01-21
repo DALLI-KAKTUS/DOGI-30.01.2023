@@ -711,8 +711,8 @@ static esp_err_t index_get_isleyici(httpd_req_t *req)
 	ESP_LOGI (TAG, "index cagrildi");
 	error = httpd_resp_send(req, (const char *) index_html_start, index_html_end - index_html_start);;
 	//ekranı temizle ve pogaca fotosu koy
-	ssd1306_clear_screen(&ekran, false);
-	ssd1306_bitmaps(&ekran, 32, 0, doga_pogaca_bitmap, 64, 64, false);
+//	ssd1306_clear_screen(&ekran, false);
+//	ssd1306_bitmaps(&ekran, 32, 0, doga_pogaca_bitmap, 64, 64, false);
 	
 	if (error != ESP_OK)
 	{
