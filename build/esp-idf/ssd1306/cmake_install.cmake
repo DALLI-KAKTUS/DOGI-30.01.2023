@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/berke/Desktop/hello_world/components/ssd1306
+# Install script for directory: C:/Users/berke/Desktop/hello_world - Kopya/components/ssd1306
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

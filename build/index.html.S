@@ -1,4 +1,4 @@
-/* * Data converted from C:/Users/berke/Desktop/hello_world/main/web/index.html
+/* * Data converted from C:/Users/berke/Desktop/hello_world - Kopya/main/web/index.html
  * (null byte appended)
  */
 .data

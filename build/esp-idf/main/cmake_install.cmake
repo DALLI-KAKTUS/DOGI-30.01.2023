@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/berke/Desktop/hello_world/main
+# Install script for directory: C:/Users/berke/Desktop/hello_world - Kopya/main
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

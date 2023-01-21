@@ -3,5 +3,5 @@ source "C:/Espressif/frameworks/esp-idf-v5.0/components/esp_app_format/Kconfig.p
 source "C:/Espressif/frameworks/esp-idf-v5.0/components/esp_rom/Kconfig.projbuild"
 source "C:/Espressif/frameworks/esp-idf-v5.0/components/esptool_py/Kconfig.projbuild"
 source "C:/Espressif/frameworks/esp-idf-v5.0/components/partition_table/Kconfig.projbuild"
-source "C:/Users/berke/Desktop/hello_world/main/Kconfig.projbuild"
-source "C:/Users/berke/Desktop/hello_world/components/ssd1306/Kconfig.projbuild"
+source "C:/Users/berke/Desktop/hello_world - Kopya/main/Kconfig.projbuild"
+source "C:/Users/berke/Desktop/hello_world - Kopya/components/ssd1306/Kconfig.projbuild"

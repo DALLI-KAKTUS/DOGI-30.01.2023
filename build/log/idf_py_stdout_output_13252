@@ -1,0 +1,9 @@
+[1/4] cmd.exe /C "cd /D "C:\Users\berke\Desktop\hello_world - Kopya\build\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.0_py3.10_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "C:/Users/berke/Desktop/hello_world - Kopya/build/partition_table/partition-table.bin" "C:/Users/berke/Desktop/hello_world - Kopya/build/GOTLALEM.bin""
+FAILED: esp-idf/esptool_py/CMakeFiles/app_check_size C:/Users/berke/Desktop/hello_world - Kopya/build/esp-idf/esptool_py/CMakeFiles/app_check_size 
+cmd.exe /C "cd /D "C:\Users\berke\Desktop\hello_world - Kopya\build\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.0_py3.10_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "C:/Users/berke/Desktop/hello_world - Kopya/build/partition_table/partition-table.bin" "C:/Users/berke/Desktop/hello_world - Kopya/build/GOTLALEM.bin""
+Error: app partition is too small for binary GOTLALEM.bin size 0x156a40:
+  - Part 'factory' 0/0 @ 0x10000 size 0x100000 (overflow 0x56a40)
+[2/4] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "C:\Users\berke\Desktop\hello_world - Kopya\build\bootloader\esp-idf\esptool_py" && C:\Espressif\python_env\idf5.0_py3.10_env\Scripts\python.exe C:/Espressif/frameworks/esp-idf-v5.0/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "C:/Users/berke/Desktop/hello_world - Kopya/build/bootloader/bootloader.bin""
+Bootloader binary size 0x5510 bytes. 0x1af0 bytes (24%) free.
+ninja: build stopped: subcommand failed.

@@ -1391,7 +1391,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_ssd1306_
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe --regenerate-during-build -SC:\Users\berke\Desktop\hello_world -BC:\Users\berke\Desktop\hello_world\build
+  command = C:\Espressif\tools\cmake\3.24.0\bin\cmake.exe --regenerate-during-build -S"C:\Users\berke\Desktop\hello_world - Kopya" -B"C:\Users\berke\Desktop\hello_world - Kopya\build"
   description = Re-running CMake...
   generator = 1
 

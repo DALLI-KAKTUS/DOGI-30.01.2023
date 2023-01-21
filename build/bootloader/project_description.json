@@ -1,8 +1,8 @@
 {
     "project_name":       "bootloader",
     "project_path":       "C:/Espressif/frameworks/esp-idf-v5.0/components/bootloader/subproject",
-    "build_dir":          "C:/Users/berke/Desktop/hello_world/build/bootloader",
-    "config_file":        "C:/Users/berke/Desktop/hello_world/sdkconfig",
+    "build_dir":          "C:/Users/berke/Desktop/hello_world - Kopya/build/bootloader",
+    "config_file":        "C:/Users/berke/Desktop/hello_world - Kopya/sdkconfig",
     "config_defaults":    "",
     "app_elf":            "bootloader.elf",
     "app_bin":            "bootloader.bin",
