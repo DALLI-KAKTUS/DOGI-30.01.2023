@@ -710,9 +710,9 @@ static esp_err_t index_get_isleyici(httpd_req_t *req)
 	esp_err_t error;
 	ESP_LOGI (TAG, "index cagrildi");
 	error = httpd_resp_send(req, (const char *) index_html_start, index_html_end - index_html_start);;
-	//ekranı temizle ve pogaca fotosu koy
-//	ssd1306_clear_screen(&ekran, false);
-//	ssd1306_bitmaps(&ekran, 32, 0, doga_pogaca_bitmap, 64, 64, false);
+	ekranı temizle ve pogaca fotosu koy
+	ssd1306_clear_screen(&ekran, false);
+	ssd1306_bitmaps(&ekran, 32, 0, doga_pogaca_bitmap, 64, 64, false);
 	
 	if (error != ESP_OK)
 	{
@@ -877,8 +877,8 @@ void app_main(void)
     
  
     //oled kurulumunun çalıştırılması
-    //oled_kurulumu();
+    oled_kurulumu();
     //cihaz açıldığında oled ekranda gösterilecek için task
-    //xTaskCreate(oled_baslangic, "oled_baslangic", 4096, NULL, 10, &oled_baslangic_isleyici);
+    xTaskCreate(oled_baslangic, "oled_baslangic", 4096, NULL, 10, &oled_baslangic_isleyici);
 
 }
