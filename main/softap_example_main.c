@@ -855,7 +855,7 @@ void oled_baslangic(){
 	ssd1306_display_text(&ekran, 0, "telefonu cikra", 14, false);
 	ssd1306_display_text(&ekran, 2, "WIFI", 4, false);
 	ssd1306_display_text(&ekran, 4, "sifre: o tarih...", 17, false);
-	
+	vTaskDelete(NULL));	
 }
 
 void app_main(void)
