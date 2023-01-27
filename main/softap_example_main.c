@@ -57,8 +57,8 @@ static const char *TAG = "GOTLALEM";
 
 
 //oled ekran pin tanımlamaları
-#define oled_sda 7
-#define oled_scl 6
+#define oled_sda 3
+#define oled_scl 2
 #define oled_rst 35
 //ekran isimlendirmesi
 SSD1306_t ekran;
