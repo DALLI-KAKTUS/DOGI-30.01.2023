@@ -841,30 +841,21 @@ void oled_kurulumu(){
     //oled ekran temizleme ayarı
     ssd1306_clear_screen(&ekran, false);
 }
-//cihaz açıldığında oled ekranda gösterilecek için task handler tanımlaması
-TaskHandle_t oled_baslangic_isleyici = NULL;
 //cihaz açıldığında oled ekranda gösterilecekler için task fonksiyonu
 void oled_baslangic(){
 
 		ssd1306_contrast(&ekran, 0xff);
 		ssd1306_clear_screen(&ekran, false);
 		for(int i= 0; i<8; i++){
-			if (wifiye_baglanildi==0) {
 			
 			ssd1306_bitmaps(&ekran, 0, 0, acılıs_animasyonu[i], 128, 64, false);
 
 			vTaskDelay(1 / portTICK_PERIOD_MS);
-			}else {
-			i=8;
-			}
-		}
-		if (wifiye_baglanildi==0) {
+			}		}
 		ssd1306_clear_screen(&ekran, false);
 		ssd1306_display_text(&ekran, 0, "telefonu cikra", 14, false);
 		ssd1306_display_text(&ekran, 2, "WIFI", 4, false);
 		ssd1306_display_text(&ekran, 4, "sifre: o tarih...", 17, false);
-		}
-		vTaskDelete(NULL);
 }
 
 void app_main(void)
@@ -887,6 +878,10 @@ void app_main(void)
     //oled kurulumunun çalıştırılması
     oled_kurulumu();
     //cihaz açıldığında oled ekranda gösterilecek için task
-    xTaskCreate(oled_baslangic, "oled_baslangic", 4096, NULL, 10, &oled_baslangic_isleyici);
+    
+	vTaskDelay(100 / portTICK_PERIOD_MS);
+	if (wifiye_baglanildi==0) {
+   		oled_kurulumu(); 
+	}
 
 }
