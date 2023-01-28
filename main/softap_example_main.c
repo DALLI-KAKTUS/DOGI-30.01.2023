@@ -647,7 +647,7 @@ extern const uint8_t kedy_html_start[] asm("_binary_kedy_html_start");
 extern const uint8_t kedy_html_end[] asm("_binary_kedy_html_end");
 
 //WIFI kurulumu
-
+bool wifiye_baglanildi=0;
 //wifi işleyicisi
 static void wifi_event_handler(void* arg, esp_event_base_t event_base,
                                     int32_t event_id, void* event_data)
@@ -656,6 +656,7 @@ static void wifi_event_handler(void* arg, esp_event_base_t event_base,
         wifi_event_ap_staconnected_t* event = (wifi_event_ap_staconnected_t*) event_data;
         ESP_LOGI(TAG, "station "MACSTR" join, AID=%d",
                  MAC2STR(event->mac), event->aid);
+		wifiye_baglanildi=1;
 		//wifiye bağlanınca ekrana adresi yazdır
 		ssd1306_clear_screen(&ekran, false);
 		ssd1306_display_text(&ekran, 0, "192.168.4.1", 11, false);
@@ -844,22 +845,27 @@ void oled_kurulumu(){
 TaskHandle_t oled_baslangic_isleyici = NULL;
 //cihaz açıldığında oled ekranda gösterilecekler için task fonksiyonu
 void oled_baslangic(){
-	if(){
+	if(wifiye_baglanildi==0){
 
-		}else{
-	ssd1306_contrast(&ekran, 0xff);
-	ssd1306_clear_screen(&ekran, false);
-	for(int i= 0; i<8; i++){
-		ssd1306_bitmaps(&ekran, 0, 0, acılıs_animasyonu[i], 128, 64, false);
-		vTaskDelay(1 / portTICK_PERIOD_MS);
-	}
-	ssd1306_clear_screen(&ekran, false);
-
-	ssd1306_display_text(&ekran, 0, "telefonu cikra", 14, false);
-	ssd1306_display_text(&ekran, 2, "WIFI", 4, false);
-	ssd1306_display_text(&ekran, 4, "sifre: o tarih...", 17, false);
-	vTaskDelete(NULL);
+		ssd1306_contrast(&ekran, 0xff);
+		ssd1306_clear_screen(&ekran, false);
+		for(int i= 0; i<8; i++){
+			ssd1306_bitmaps(&ekran, 0, 0, acılıs_animasyonu[i], 128, 64, false);
+			vTaskDelay(1 / portTICK_PERIOD_MS);
 		}
+		ssd1306_clear_screen(&ekran, false);
+		ssd1306_display_text(&ekran, 0, "telefonu cikra", 14, false);
+		ssd1306_display_text(&ekran, 2, "WIFI", 4, false);
+		ssd1306_display_text(&ekran, 4, "sifre: o tarih...", 17, false);
+	}else{
+		
+		//wifiye bağlanınca ekrana adresi yazdır
+		ssd1306_clear_screen(&ekran, false);
+		ssd1306_display_text(&ekran, 0, "192.168.4.1", 11, false);
+		ssd1306_display_text(&ekran, 3, "buraya gri", 14, false);
+
+		}
+	vTaskDelete(NULL);
 }
 
 void app_main(void)
