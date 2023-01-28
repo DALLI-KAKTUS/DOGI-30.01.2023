@@ -854,6 +854,8 @@ void oled_baslangic(){
 			vTaskDelay(1 / portTICK_PERIOD_MS);
 			}else {
 			ssd1306_clear_screen(&ekran, false);
+			ssd1306_display_text(&ekran, 0, "192.168.4.1", 11, false);
+			ssd1306_display_text(&ekran, 3, "buraya gri", 14, false);
 			}
 			}	
 	if (wifiye_baglanildi==0) {
