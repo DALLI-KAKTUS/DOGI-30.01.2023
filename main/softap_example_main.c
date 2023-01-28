@@ -850,8 +850,14 @@ void oled_baslangic(){
 		ssd1306_contrast(&ekran, 0xff);
 		ssd1306_clear_screen(&ekran, false);
 		for(int i= 0; i<8; i++){
+			if (wifiye_baglanildi==0) {
+			
 			ssd1306_bitmaps(&ekran, 0, 0, acılıs_animasyonu[i], 128, 64, false);
+
 			vTaskDelay(1 / portTICK_PERIOD_MS);
+			}else {
+			i=8;
+			}
 		}
 		ssd1306_clear_screen(&ekran, false);
 		ssd1306_display_text(&ekran, 0, "telefonu cikra", 14, false);
