@@ -845,7 +845,6 @@ void oled_kurulumu(){
 TaskHandle_t oled_baslangic_isleyici = NULL;
 //cihaz açıldığında oled ekranda gösterilecekler için task fonksiyonu
 void oled_baslangic(){
-	if(wifiye_baglanildi==0){
 
 		ssd1306_contrast(&ekran, 0xff);
 		ssd1306_clear_screen(&ekran, false);
@@ -859,19 +858,13 @@ void oled_baslangic(){
 			i=8;
 			}
 		}
+		if (wifiye_baglanildi==0) {
 		ssd1306_clear_screen(&ekran, false);
 		ssd1306_display_text(&ekran, 0, "telefonu cikra", 14, false);
 		ssd1306_display_text(&ekran, 2, "WIFI", 4, false);
 		ssd1306_display_text(&ekran, 4, "sifre: o tarih...", 17, false);
-	}else{
-		
-		//wifiye bağlanınca ekrana adresi yazdır
-		ssd1306_clear_screen(&ekran, false);
-		ssd1306_display_text(&ekran, 0, "192.168.4.1", 11, false);
-		ssd1306_display_text(&ekran, 3, "buraya gri", 14, false);
-
 		}
-	vTaskDelete(NULL);
+		vTaskDelete(NULL);
 }
 
 void app_main(void)
