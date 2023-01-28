@@ -852,6 +852,8 @@ void oled_baslangic(){
 			ssd1306_bitmaps(&ekran, 0, 0, acılıs_animasyonu[i], 128, 64, false);
 
 			vTaskDelay(1 / portTICK_PERIOD_MS);
+			}else {
+			ssd1306_clear_screen(&ekran, false);
 			}
 			}	
 	if (wifiye_baglanildi==0) {
@@ -884,7 +886,7 @@ void app_main(void)
     oled_kurulumu();
     //cihaz açıldığında oled ekranda gösterilecek için task
     
-	vTaskDelay(100 / portTICK_PERIOD_MS);
+	vTaskDelay(1000 / portTICK_PERIOD_MS);
 	if (wifiye_baglanildi==0) {
    		oled_baslangic(); 
 	}
