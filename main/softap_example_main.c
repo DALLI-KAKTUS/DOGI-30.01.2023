@@ -47,7 +47,7 @@
 #include "ssd1306.h"
 #include "font8x8_basic.h"
 //WIFI tanımlamaları
-#define WIFI_SSID      "berke"
+#define WIFI_SSID      "DOGA <3"
 #define WIFI_PASS      "30052022"
 #define WIFI_CHANNEL    1
 #define MAX_STA_CONN    2
@@ -63,7 +63,7 @@ static const char *TAG = "GOTLALEM";
 //ekran isimlendirmesi
 SSD1306_t ekran;
 //bitmapler
-uint8_t acılıs_animasyonu[8][1024] = {
+uint8_t acilis_animasyonu[8][1024] = {
 
 	// 'ac1, 128x64px
 
@@ -660,7 +660,7 @@ static void wifi_event_handler(void* arg, esp_event_base_t event_base,
 		//wifiye bağlanınca ekrana adresi yazdır
 		ssd1306_clear_screen(&ekran, false);
 		ssd1306_display_text(&ekran, 0, "192.168.4.1", 11, false);
-		ssd1306_display_text(&ekran, 3, "buraya gri", 14, false);
+		ssd1306_display_text(&ekran, 3, "buraya gri", 10, false);
     } else if (event_id == WIFI_EVENT_AP_STADISCONNECTED) {
         wifi_event_ap_stadisconnected_t* event = (wifi_event_ap_stadisconnected_t*) event_data;
         ESP_LOGI(TAG, "station "MACSTR" leave, AID=%d",
@@ -690,7 +690,7 @@ void wifi_init_softap(void)
             .channel = WIFI_CHANNEL,
             .password = WIFI_PASS,
             .max_connection = MAX_STA_CONN,
-            .authmode = WIFI_AUTH_OPEN,
+            .authmode = WIFI_AUTH_WPA_WPA2_PSK,
             .pmf_cfg = {
                     .required = false,
             },
@@ -849,7 +849,7 @@ void oled_baslangic(){
 		for(int i= 0; i<8; i++){
 			if (wifiye_baglanildi==0) {
 			
-			ssd1306_bitmaps(&ekran, 0, 0, acılıs_animasyonu[i], 128, 64, false);
+			ssd1306_bitmaps(&ekran, 0, 0, acilis_animasyonu[i], 128, 64, false);
 
 			vTaskDelay(1 / portTICK_PERIOD_MS);
 			}else {
@@ -864,6 +864,7 @@ void oled_baslangic(){
 		ssd1306_display_text(&ekran, 0, "telefonu cikra", 14, false);
 		ssd1306_display_text(&ekran, 2, "WIFI", 4, false);
 		ssd1306_display_text(&ekran, 4, "sifre: o tarih...", 17, false);
+		ssd1306_display_text(&ekran, 6, "bitisik g-a-y", 13, false);
 	}		
 }
 

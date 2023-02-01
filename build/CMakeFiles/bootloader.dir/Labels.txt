@@ -1,13 +1,13 @@
 # Target labels
  bootloader
 # Source files and their labels
-C:/Users/berke/Desktop/hello_world - Kopya/build/CMakeFiles/bootloader
-C:/Users/berke/Desktop/hello_world - Kopya/build/CMakeFiles/bootloader.rule
-C:/Users/berke/Desktop/hello_world - Kopya/build/CMakeFiles/bootloader-complete.rule
-C:/Users/berke/Desktop/hello_world - Kopya/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
-C:/Users/berke/Desktop/hello_world - Kopya/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
-C:/Users/berke/Desktop/hello_world - Kopya/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
-C:/Users/berke/Desktop/hello_world - Kopya/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
-C:/Users/berke/Desktop/hello_world - Kopya/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
-C:/Users/berke/Desktop/hello_world - Kopya/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
-C:/Users/berke/Desktop/hello_world - Kopya/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+/home/kaktus/Desktop/DOGI-30.01.2023/build/CMakeFiles/bootloader
+/home/kaktus/Desktop/DOGI-30.01.2023/build/CMakeFiles/bootloader.rule
+/home/kaktus/Desktop/DOGI-30.01.2023/build/CMakeFiles/bootloader-complete.rule
+/home/kaktus/Desktop/DOGI-30.01.2023/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/kaktus/Desktop/DOGI-30.01.2023/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/kaktus/Desktop/DOGI-30.01.2023/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/kaktus/Desktop/DOGI-30.01.2023/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/kaktus/Desktop/DOGI-30.01.2023/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/kaktus/Desktop/DOGI-30.01.2023/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/kaktus/Desktop/DOGI-30.01.2023/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
