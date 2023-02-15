@@ -1,0 +1,100 @@
+[1/700] Building ASM object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s2/highint_hdl.S.obj
+FAILED: esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s2/highint_hdl.S.obj 
+/home/kaktus/.espressif/tools/xtensa-esp32s2-elf/esp-2022r1-11.2.0/xtensa-esp32s2-elf/bin/xtensa-esp32s2-elf-gcc -DESP_PLATFORM -DIDF_VER=\"v5.1-dev-3025-g49551cc48c\" -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/kaktus/Desktop/DOGI-30.01.2023/build/config -I/home/kaktus/esp/esp-idf/components/esp_system/include -I/home/kaktus/esp/esp-idf/components/esp_system/port/include -I/home/kaktus/esp/esp-idf/components/esp_system/port/. -I/home/kaktus/esp/esp-idf/components/esp_system/port/soc -I/home/kaktus/esp/esp-idf/components/esp_system/port/include/private -I/home/kaktus/esp/esp-idf/components/newlib/platform_include -I/home/kaktus/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/kaktus/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/kaktus/esp/esp-idf/components/freertos/esp_additions/include/freertos -I/home/kaktus/esp/esp-idf/components/freertos/esp_additions/include -I/home/kaktus/esp/esp-idf/components/esp_hw_support/include -I/home/kaktus/esp/esp-idf/components/esp_hw_support/include/soc -I/home/kaktus/esp/esp-idf/components/esp_hw_support/include/soc/esp32s2 -I/home/kaktus/esp/esp-idf/components/esp_hw_support/port/esp32s2/. -I/home/kaktus/esp/esp-idf/components/esp_hw_support/port/esp32s2/private_include -I/home/kaktus/esp/esp-idf/components/heap/include -I/home/kaktus/esp/esp-idf/components/log/include -I/home/kaktus/esp/esp-idf/components/soc/include -I/home/kaktus/esp/esp-idf/components/soc/esp32s2 -I/home/kaktus/esp/esp-idf/components/soc/esp32s2/include -I/home/kaktus/esp/esp-idf/components/hal/esp32s2/include -I/home/kaktus/esp/esp-idf/components/hal/include -I/home/kaktus/esp/esp-idf/components/hal/platform_port/include -I/home/kaktus/esp/esp-idf/components/esp_rom/include -I/home/kaktus/esp/esp-idf/components/esp_rom/include/esp32s2 -I/home/kaktus/esp/esp-idf/components/esp_rom/esp32s2 -I/home/kaktus/esp/esp-idf/components/esp_common/include -I/home/kaktus/esp/esp-idf/components/xtensa/include -I/home/kaktus/esp/esp-idf/components/xtensa/esp32s2/include -I/home/kaktus/esp/esp-idf/components/lwip/include -I/home/kaktus/esp/esp-idf/components/lwip/include/apps -I/home/kaktus/esp/esp-idf/components/lwip/include/apps/sntp -I/home/kaktus/esp/esp-idf/components/lwip/lwip/src/include -I/home/kaktus/esp/esp-idf/components/lwip/port/esp32/include -I/home/kaktus/esp/esp-idf/components/lwip/port/esp32/include/arch -I/home/kaktus/esp/esp-idf/components/spi_flash/include -I/home/kaktus/esp/esp-idf/components/esp_timer/include -I/home/kaktus/esp/esp-idf/components/pthread/include -I/home/kaktus/esp/esp-idf/components/bootloader_support/include -I/home/kaktus/esp/esp-idf/components/bootloader_support/bootloader_flash/include -I/home/kaktus/esp/esp-idf/components/efuse/include -I/home/kaktus/esp/esp-idf/components/efuse/esp32s2/include -I/home/kaktus/esp/esp-idf/components/driver/include -I/home/kaktus/esp/esp-idf/components/driver/deprecated -I/home/kaktus/esp/esp-idf/components/driver/esp32s2/include -I/home/kaktus/esp/esp-idf/components/esp_pm/include -I/home/kaktus/esp/esp-idf/components/esp_ringbuf/include -I/home/kaktus/esp/esp-idf/components/esp_partition/include -I/home/kaktus/esp/esp-idf/components/esp_gdbstub/include -I/home/kaktus/esp/esp-idf/components/esp_gdbstub/xtensa -I/home/kaktus/esp/esp-idf/components/esp_gdbstub/esp32s2 -I/home/kaktus/esp/esp-idf/components/esp_app_format/include -I/home/kaktus/esp/esp-idf/components/vfs/include -mlongcalls  -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Og -fmacro-prefix-map=/home/kaktus/Desktop/DOGI-30.01.2023=. -fmacro-prefix-map=/home/kaktus/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -DconfigENABLE_FREERTOS_DEBUG_OCDAWARE=1 -Wno-format -MD -MT esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s2/highint_hdl.S.obj -MF esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s2/highint_hdl.S.obj.d -o esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s2/highint_hdl.S.obj -c /home/kaktus/esp/esp-idf/components/esp_system/port/soc/esp32s2/highint_hdl.S
+/home/kaktus/esp/esp-idf/components/esp_system/port/soc/esp32s2/highint_hdl.S: Assembler messages:
+/home/kaktus/esp/esp-idf/components/esp_system/port/soc/esp32s2/highint_hdl.S:65: Error: unknown opcode or format name 'rsr.INTERRUPT'
+/home/kaktus/esp/esp-idf/components/esp_system/port/soc/esp32s2/highint_hdl.S:69: Error: unknown opcode or format name 'rsr.INTENABLE'
+/home/kaktus/esp/esp-idf/components/esp_system/port/soc/esp32s2/highint_hdl.S:72: Error: unknown opcode or format name 'wsr.INTENABLE'
+[2/700] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s2/cache_err_int.c.obj
+[3/700] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s2/reset_reason.c.obj
+[4/700] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/xtensa/panic_arch.c.obj
+[5/700] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32s2/system_internal.c.obj
+[6/700] Performing build step for 'bootloader'
+FAILED: bootloader-prefix/src/bootloader-stamp/bootloader-build bootloader/bootloader.elf bootloader/bootloader.bin bootloader/bootloader.map /home/kaktus/Desktop/DOGI-30.01.2023/build/bootloader-prefix/src/bootloader-stamp/bootloader-build /home/kaktus/Desktop/DOGI-30.01.2023/build/bootloader/bootloader.elf /home/kaktus/Desktop/DOGI-30.01.2023/build/bootloader/bootloader.bin /home/kaktus/Desktop/DOGI-30.01.2023/build/bootloader/bootloader.map 
+cd /home/kaktus/Desktop/DOGI-30.01.2023/build/bootloader && /usr/bin/cmake --build .
+[1/107] Generating project_elf_src_esp32s2.c
+[2/107] Building C object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/eri.c.obj
+[3/107] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/dport_access_common.c.obj
+[4/107] Building C object CMakeFiles/bootloader.elf.dir/project_elf_src_esp32s2.c.obj
+[5/107] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s2/interrupts.c.obj
+[6/107] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/lldesc.c.obj
+[7/107] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s2/adc_periph.c.obj
+[8/107] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s2/dedic_gpio_periph.c.obj
+[9/107] Building C object esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xt_trax.c.obj
+[10/107] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s2/uart_periph.c.obj
+[11/107] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s2/gpio_periph.c.obj
+[12/107] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s2/rmt_periph.c.obj
+[13/107] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s2/pcnt_periph.c.obj
+[14/107] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s2/ledc_periph.c.obj
+[15/107] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s2/spi_periph.c.obj
+[16/107] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s2/sdm_periph.c.obj
+[17/107] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s2/temperature_sensor_periph.c.obj
+[18/107] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s2/i2s_periph.c.obj
+[19/107] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s2/twai_periph.c.obj
+[20/107] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s2/lcd_periph.c.obj
+[21/107] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s2/timer_periph.c.obj
+[22/107] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s2/i2c_periph.c.obj
+[23/107] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s2/usb_otg_periph.c.obj
+[24/107] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s2/touch_sensor_periph.c.obj
+[25/107] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s2/usb_periph.c.obj
+[26/107] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s2/dac_periph.c.obj
+[27/107] Building C object esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s2/rtc_io_periph.c.obj
+[28/107] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/efuse_hal.c.obj
+[29/107] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mpu_hal.c.obj
+[30/107] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s2/efuse_hal.c.obj
+[31/107] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/cache_hal.c.obj
+[32/107] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.obj
+[33/107] Building C object esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj
+[34/107] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_init.c.obj
+[35/107] Building C object esp-idf/hal/CMakeFiles/__idf_hal.dir/wdt_hal_iram.c.obj
+[36/107] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common_loader.c.obj
+[37/107] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_mem.c.obj
+[38/107] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_common.c.obj
+[39/107] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random.c.obj
+[40/107] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_random_esp32s2.c.obj
+[41/107] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash.c.obj
+[42/107] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_encrypt.c.obj
+[43/107] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/secure_boot.c.obj
+[44/107] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/flash_partitions.c.obj
+[45/107] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/bootloader_flash_config_esp32s2.c.obj
+[46/107] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_efuse.c.obj
+[47/107] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src/flash_qio_mode.c.obj
+[48/107] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_utility.c.obj
+[49/107] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_clock_loader.c.obj
+[50/107] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp_image_format.c.obj
+[51/107] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_console_loader.c.obj
+[52/107] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_console.c.obj
+[53/107] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_init.c.obj
+[54/107] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32s2/bootloader_soc.c.obj
+[55/107] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloader_panic.c.obj
+[56/107] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32s2/bootloader_sha.c.obj
+[57/107] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s2/esp_efuse_fields.c.obj
+[58/107] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s2/esp_efuse_table.c.obj
+[59/107] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s2/esp_efuse_rtc_calib.c.obj
+[60/107] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s2/esp_efuse_rtc_table.c.obj
+[61/107] Building C object esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/uECC_verify_antifault.c.obj
+[62/107] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32s2/esp_efuse_utility.c.obj
+[63/107] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_fields.c.obj
+[64/107] Building C object esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32s2/bootloader_esp32s2.c.obj
+[65/107] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_api.c.obj
+[66/107] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.obj
+[67/107] Building C object esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_err.c.obj
+[68/107] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj
+FAILED: esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj 
+/home/kaktus/.espressif/tools/xtensa-esp32s2-elf/esp-2022r1-11.2.0/xtensa-esp32s2-elf/bin/xtensa-esp32s2-elf-gcc -DBOOTLOADER_BUILD=1 -DESP_PLATFORM -DIDF_VER=\"v5.1-dev-3025-g49551cc48c\" -D_GNU_SOURCE -I/home/kaktus/Desktop/DOGI-30.01.2023/build/bootloader/config -I/home/kaktus/esp/esp-idf/components/esp_hw_support/include -I/home/kaktus/esp/esp-idf/components/esp_hw_support/include/soc -I/home/kaktus/esp/esp-idf/components/esp_hw_support/include/soc/esp32s2 -I/home/kaktus/esp/esp-idf/components/esp_hw_support/port/include -I/home/kaktus/esp/esp-idf/components/esp_hw_support/include/esp_private -I/home/kaktus/esp/esp-idf/components/esp_hw_support/port/esp32s2/. -I/home/kaktus/esp/esp-idf/components/esp_hw_support/port/esp32s2/private_include -I/home/kaktus/esp/esp-idf/components/log/include -I/home/kaktus/esp/esp-idf/components/esp_rom/include -I/home/kaktus/esp/esp-idf/components/esp_rom/include/esp32s2 -I/home/kaktus/esp/esp-idf/components/esp_rom/esp32s2 -I/home/kaktus/esp/esp-idf/components/esp_common/include -I/home/kaktus/esp/esp-idf/components/newlib/platform_include -I/home/kaktus/esp/esp-idf/components/xtensa/include -I/home/kaktus/esp/esp-idf/components/xtensa/esp32s2/include -I/home/kaktus/esp/esp-idf/components/soc/include -I/home/kaktus/esp/esp-idf/components/soc/esp32s2 -I/home/kaktus/esp/esp-idf/components/soc/esp32s2/include -I/home/kaktus/esp/esp-idf/components/efuse/include -I/home/kaktus/esp/esp-idf/components/efuse/esp32s2/include -I/home/kaktus/esp/esp-idf/components/spi_flash/include -I/home/kaktus/esp/esp-idf/components/hal/esp32s2/include -I/home/kaktus/esp/esp-idf/components/hal/include -I/home/kaktus/esp/esp-idf/components/hal/platform_port/include -I/home/kaktus/esp/esp-idf/components/bootloader_support/include -I/home/kaktus/esp/esp-idf/components/bootloader_support/bootloader_flash/include -I/home/kaktus/esp/esp-idf/components/bootloader_support/private_include -mlongcalls  -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -Os -freorder-blocks -fmacro-prefix-map=/home/kaktus/esp/esp-idf/components/bootloader/subproject=. -fmacro-prefix-map=/home/kaktus/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -fno-stack-protector -std=gnu17 -Wno-old-style-declaration -Wno-format -MD -MT esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj -MF esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj.d -o esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj -c /home/kaktus/esp/esp-idf/components/esp_hw_support/cpu.c
+/home/kaktus/esp/esp-idf/components/xtensa/include/xt_utils.h: Assembler messages:
+/home/kaktus/esp/esp-idf/components/xtensa/include/xt_utils.h:120: Error: unknown opcode or format name 'wsr.IBREAKA1'
+/home/kaktus/esp/esp-idf/components/xtensa/include/xt_utils.h:126: Error: unknown opcode or format name 'rsr.IBREAKENABLE'
+/home/kaktus/esp/esp-idf/components/xtensa/include/xt_utils.h:128: Error: unknown opcode or format name 'wsr.IBREAKENABLE'
+/home/kaktus/esp/esp-idf/components/xtensa/include/xt_utils.h:122: Error: unknown opcode or format name 'wsr.IBREAKA0'
+/home/kaktus/esp/esp-idf/components/xtensa/include/xt_utils.h:135: Error: unknown opcode or format name 'rsr.IBREAKENABLE'
+/home/kaktus/esp/esp-idf/components/xtensa/include/xt_utils.h:137: Error: unknown opcode or format name 'wsr.IBREAKENABLE'
+/home/kaktus/esp/esp-idf/components/xtensa/include/xt_utils.h:141: Error: unknown opcode or format name 'wsr.IBREAKA1'
+/home/kaktus/esp/esp-idf/components/xtensa/include/xt_utils.h:143: Error: unknown opcode or format name 'wsr.IBREAKA0'
+[69/107] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/esp_efuse_utility.c.obj
+[70/107] Building C object esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/efuse_controller/keys/with_key_purposes/esp_efuse_api_key.c.obj
+[71/107] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s2/rtc_clk_init.c.obj
+[72/107] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s2/rtc_init.c.obj
+[73/107] Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s2/rtc_clk.c.obj
+ninja: build stopped: subcommand failed.
+ninja: build stopped: subcommand failed.
