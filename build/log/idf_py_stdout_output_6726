@@ -1,7 +1,0 @@
-[1/4] cd /home/kaktus/Desktop/DOGI-30.01.2023/build/esp-idf/esptool_py && /home/kaktus/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/kaktus/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/kaktus/Desktop/DOGI-30.01.2023/build/partition_table/partition-table.bin /home/kaktus/Desktop/DOGI-30.01.2023/build/GOTLALEM.bin
-GOTLALEM.bin binary size 0x15bde0 bytes. Smallest app partition is 0x177000 bytes. 0x1b220 bytes (7%) free.
-[2/4] Performing build step for 'bootloader'
-[1/1] cd /home/kaktus/Desktop/DOGI-30.01.2023/build/bootloader/esp-idf/esptool_py && /home/kaktus/.espressif/python_env/idf5.1_py3.10_env/bin/python /home/kaktus/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /home/kaktus/Desktop/DOGI-30.01.2023/build/bootloader/bootloader.bin
-Bootloader binary size 0x5590 bytes. 0x1a70 bytes (24%) free.
-[3/4] No install step for 'bootloader'
-[4/4] Completed 'bootloader'
